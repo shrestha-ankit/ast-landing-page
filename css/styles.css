@@ -135,14 +135,48 @@ html {
 }
 
 /* arrival section */
-/* .arrival-section {
+.arrival-section {
     background-color: #FFFFFF;
+    padding: 3rem;
+    margin: 2rem 0 13rem 0;
+}
+
+.arrival-heading {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.arrival-cards {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.arrival-section .card {
-    height: 5rem;
-    width: 2.5rem;
-} */
+.arrival-cards .card {
+    height: 20rem;
+    width: 20rem;
+    position: relative;
+}
+
+.arrival-img {
+    height: 100%;
+    width: 100%;
+}
+
+.card a {
+    text-decoration: none;
+    color: #6c757d;
+}
+
+.arrow {
+    position: absolute;
+    left: 90%;
+    bottom: -60%;
+}
+
+.card .arrival-subhheading {
+    margin: 1rem 0;
+    font-weight: bold;
+}
