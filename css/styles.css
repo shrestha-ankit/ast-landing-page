@@ -118,3 +118,12 @@ html {
     height: auto;
     border-radius: 10px;
 }
+
+/* Partner Section */
+.partner-container {
+    background-color: #EBD96B;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
