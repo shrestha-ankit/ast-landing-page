@@ -14,6 +14,7 @@
      <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+    <!-- header section -->
     <header class="container">
         <nav class="nav-bar">
             <div class="nav-brand">
@@ -21,10 +22,12 @@
             </div>
             <div class="nav-links">
                 <ul>
-                    <li><a href="#">Catalogue</a></li>
-                    <li><a href="#">Fashion</a></li>
-                    <li><a href="#">Favourite</a></li>
-                    <li><a href="#">Lifestyle</a></li>
+                    <div class="link-items">
+                        <li><a href="#">Catalogue</a></li>
+                        <li><a href="#">Fashion</a></li>
+                        <li><a href="#">Favourite</a></li>
+                        <li><a href="#">Lifestyle</a></li>
+                    </div>
                     <li><a class="btn" href="#">Sign Up</a></li>
                 </ul>
             </div>
@@ -32,12 +35,12 @@
     
         <div class="header-container">
             <div class="text-container">
-                <h1 class="home-heading">
-                    <span class="home-heading__white">Let's</span> 
-                    Explore 
-                    <span class="home-heading__yellow">Unique</span> 
-                    Clothes.
-                </h1>
+                <div class="home-heading">
+                    <div class="rotate_white"><span class="rotate-back">Let's</span></div> 
+                    <span>Explore</span> 
+                    <div class="rotate_yellow"><span class="rotate-back">Unique</span></div>
+                    <span>Clothes.</span>
+                </div>
                 <p class="home-sub-heading">Live for Influential and Innovative fashion!</p>
                 <a href="#shop" class="btn btn-primary">Shop Now</a>
             </div>
@@ -51,12 +54,14 @@
     
     <!-- partner section -->
      <section class="partner-container">
-        <div><img src="./images/partner/H&M-Logo.svg 1.png" alt="patner image"></div>
-        <div><img src="./images/partner/obey1846-removebg-preview 1.png" alt="patner image"></div>
-        <div><img src="./images/partner/Shopify_logo_2018.svg 1.png" alt="patner image"></div>
-        <div><img src="./images/partner/image 13.png" alt="patner image"></div>
-        <div><img src="./images/partner/Levis-logo-quer.svg 1.png" alt="patner image"></div>
-        <div><img src="./images/partner/Amazon_logo.svg 1.png" alt="patner image"></div>
+        <div class="partner-image">
+            <div><img src="./images/partner/H&M-Logo.svg 1.png" alt="patner image"></div>
+            <div><img src="./images/partner/obey1846-removebg-preview 1.png" alt="patner image"></div>
+            <div><img src="./images/partner/Shopify_logo_2018.svg 1.png" alt="patner image"></div>
+            <div><img src="./images/partner/image 13.png" alt="patner image"></div>
+            <div><img src="./images/partner/Levis-logo-quer.svg 1.png" alt="patner image"></div>
+            <div><img src="./images/partner/Amazon_logo.svg 1.png" alt="patner image"></div>
+        </div>
      </section>
 
      <!-- arrival section -->
@@ -66,26 +71,32 @@
             <div class="card">
                 <div>
                     <img class="arrival-img" src="./images/arrival/Rectangle 20.png" alt="new-arrivals">
-                    <p class="arrival-subhheading">Hoodies & Sweet Shirt</p>
-                    <a href="#">Explore!</a>
+                    <div class="subheading-wrapper">
+                        <p class="arrival-subhheading">Hoodies & Sweet Shirt</p>
+                        <a href="#">Explore Now!</a>
+                    </div>
                 </div>
-                <div class="arrow">-></div>
+                <img class="arrow" src="./images/arrow.png" alt="arrow">
             </div>
             <div class="card">
                 <div>
                     <img class="arrival-img" src="./images/arrival/Rectangle 21.png" alt="new-arrivals">
-                    <p class="arrival-subhheading">Coat & Parkas</p>
-                    <a href="#">Explore!</a>
+                    <div class="subheading-wrapper">
+                        <p class="arrival-subhheading">Coat & Parkas</p>
+                        <a href="#">Explore Now!</a>
+                    </div>
                 </div>
-                <div class="arrow">-></div>
+                <img class="arrow" src="./images/arrow.png" alt="arrow">
             </div>
             <div class="card">
                 <div>
                     <img class="arrival-img" src="./images/arrival/Rectangle 22.png" alt="new-arrivals">
-                    <p class="arrival-subhheading">Tees & T-Shirt</p>
-                    <a href="#">Explore!</a>
+                    <div class="subheading-wrapper">
+                        <p class="arrival-subhheading">Tees & T-Shirt</p>
+                        <a href="#">Explore Now!</a>
+                    </div>
                 </div>
-                <div class="arrow">-></div>
+                <img class="arrow" src="./images/arrow.png" alt="arrow">
             </div>
         </div>
      </section>
@@ -94,11 +105,11 @@
       <section class="shop-now-container">
         <div class="card"><img class="shop-img" src="./images/GIRL.png" alt="shop now image"></div>
         <div class="card">
-            <div>
-                <h1 class="shop-heading">
-                    <span>payday</span>
+            <div class="container-card">
+                <div class="shop-heading">
+                    <div class="rotate_white shop-head"><span class="rotate-back">payday</span></div>
                     sale now
-                </h1>
+                </div>
                 <p class="shop-subheading">
                     Spend minimal $100 get 30% off voucher code for your next purchase
                 </p>
@@ -109,21 +120,30 @@
                     *Terms & Conditions apply
                 </p>
             </div>
+            <button class="shop-btn btn-primary">Shop Now</button>
         </div>
       </section>
 
       <!-- trending section -->
       <section class="trending-container">
         <h2>Young's Favourite</h2>
-        <div class="card">
-            <img src="" alt="trending image">
-            <p>Trending on Instagram</p>
-            <a href="#">Explore Now!</a>
-        </div>
-        <div class="card">
-            <img src="" alt="trending image">
-            <p>Trending on Instagram</p>
-            <a href="#">Explore Now!</a>
+        <div class="trending-card-container">
+            <div class="card">
+                <div>
+                    <img src="" alt="trending image">
+                    <p>Trending on Instagram</p>
+                    <a href="#">Explore Now!</a>
+                </div>
+                <img class="arrow" src="./images/arrow.png" alt="arrow">
+            </div>
+            <div class="card">
+                <div>
+                    <img src="" alt="trending image">
+                    <p>Trending on Instagram</p>
+                    <a href="#">Explore Now!</a>
+                </div>
+                <img class="arrow" src="./images/arrow.png" alt="arrow">
+            </div>
         </div>
       </section>
 

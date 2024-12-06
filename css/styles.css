@@ -16,6 +16,8 @@ html {
 
 /* Container Section */
 .container {
+    max-height: 970px;
+    max-width: 1720px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -23,14 +25,26 @@ html {
 
 /* Navbar */
 .nav-bar {
-    padding: 2rem 4rem;
+    max-height: 62px;
+    max-width: 1718.26px;
+    padding: 2rem 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.nav-brand {
+    max-width: 236.26px;
+    max-height: 60px;
+}
+
 .nav-brand img {
-    width: 100px;
+    width: auto;
+}
+
+.nav-links {
+    max-height: 62px;
+    max-width: 840px;
 }
 
 .nav-links ul {
@@ -39,7 +53,21 @@ html {
     gap: 1.5rem;
 }
 
+.link-items {
+    max-width: 652px;
+    max-height: 36px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links ul li {
+    max-width: 135px;
+    max-height: 36px;
+}
+
 .nav-links ul li a {
+    height: auto;
+    width: auto;
     text-decoration: none;
     color: #333;
     font-weight: 500;
@@ -47,58 +75,76 @@ html {
 }
 
 .nav-links ul li .btn {
-    background-color: #000;
-    color: #FFF;
+    max-height: 62px;
+    max-width: 134px;
+    background-color: #000000;
+    color: #FFFFFF;
     padding: 0.8rem 1.5rem;
     border-radius: 5px;
 }
 
 /* Header Section */
 .header-container {
+    max-height: 852px;
+    max-width: 1720px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
     padding: 4rem 3rem;
     background-color: #F8F9FA;
     border-radius: 20px;
     margin: 2rem auto;
     width: 90%;
-}
-
-.text-container {
-    max-width: 50%;
-}
-
-.home-heading {
-    font-size: 3.5rem;
-    font-weight: bold;
-    line-height: 1.2;
+    position: relative;
 }
 
 .home-heading span {
-    display: inline-block;
+    display: block;
+}
+
+.home-heading {
+    max-height: 473px;
+    max-width: 474px;
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: uppercase;  
+}
+
+.rotate_white {
+    background-color: #FFFFFF;
     padding: 0.2rem 0.5rem;
 }
 
-.home-heading__white {
-    background-color: #FFF;
-    padding: 0.2rem 0.5rem;
-}
-
-.home-heading__yellow {
+.rotate_yellow {
     background-color: #EBD96B;
     padding: 0.2rem 0.5rem;
 }
 
+.rotate_white, .rotate_yellow {
+    width: 20rem;
+    transform: rotate(-2deg);
+}
+
+.rotate_white .rotate-back, .rotate_yellow .rotate-back {
+    transform: rotate(2deg);
+}
+
 .home-sub-heading {
+    max-width: 606px;
+    max-height: 58px;
     font-size: 1.25rem;
-    color: #6c757d;
     margin: 1rem 0 2rem;
+}
+
+.btn {
+    max-height: 77px;
+    max-width: 221px;
 }
 
 .btn-primary {
     background-color: #000;
-    color: #FFF;
+    color: #FFFFFF;
     padding: 0.8rem 1.5rem;
     border: none;
     border-radius: 8px;
@@ -114,97 +160,163 @@ html {
 }
 
 .home-image {
-    max-width: 100%;
-    height: auto;
+    max-width: 871px;
+    max-height: 784px;
+    height: 30rem;
     border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
 }
 
 /* Partner Section */
 .partner-container {
+    max-width: 1920px;
+    max-height: 186px;
     background-color: #EBD96B;
+    padding: 2rem 5rem;
+    margin-top: 2rem;
+}
+
+.partner-image {
+    max-width: 1570.85px;
+    max-height: 57px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 2rem 5rem;
-    margin: 2rem 0;
 }
 
 .partner-container img {
-    height: 3rem;
-    width: 6rem;
+    max-width: 86.47px;
+    max-height: 57px;
 }
 
 /* arrival section */
 .arrival-section {
+    max-width: 1638px;
+    max-height: 967px;
     background-color: #FFFFFF;
-    padding: 3rem;
-    margin: 2rem 0 20rem 0;
+    padding: 2rem 4rem 4rem 4rem;
+    margin-bottom: 1rem;
 }
 
 .arrival-heading {
+    max-width: 404px;
+    max-height: 41px;
     text-transform: uppercase;
     font-size: 3.5rem;
     font-weight: bold;
     line-height: 1.5;
-    margin-bottom: 1.5rem;
 }
 
 .arrival-cards {
+    max-height: 808px;
+    max-width: 1638px;
+    margin-top: 7rem;
     display: flex;
     justify-content: space-between;
 }
 
 .arrival-cards .card {
-    height: 20rem;
-    width: 25rem;
+    max-height: 808px;
+    max-width: 484px;
     position: relative;
 }
 
 .arrival-img {
-    height: 100%;
-    width: 100%;
+    max-width: 484px;
+    max-height: 704px;
+    width: 20rem;
+    height: 30rem;
+}
+
+.subheading-wrapper {
+    max-height: 76px;
+    max-width: 484px;
+    margin-top: 1rem;
 }
 
 .card a {
     text-decoration: none;
-    color: #6c757d;
+    color: #7F7F7F;
+;
 }
 
 .arrow {
+    max-width: 32px;
+    max-height: 32px;
     position: absolute;
     left: 90%;
-    bottom: -100%;
+    bottom: 3%;
 }
 
-.card .arrival-subhheading {
-    margin: 1rem 0;
+
+.subheading-wrapper .arrival-subhheading {
+    max-width: 321px;
+    max-height: 36px;
+    margin: 1rem 0 0.5 0;
     font-weight: bold;
 }
 
 /* shop now section */
 .shop-now-container {
+    max-height: 968px;
+    max-width: 1924px;
     background-color: #EBD96B;
-    padding: 3rem 0 0 0;
+    margin-bottom: 1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
 }
 
 .shop-now-container .card {
     width: 50%;
-}
-
-.shop-img {
-    height: 30rem;
-    width: 100%;    
+    height: 100%;
+    margin: 0;
+    padding: 7rem;
+    position: relative;
 }
 
 .shop-heading {
     text-transform: uppercase;
+    font-size: 3rem;
     font-weight: bolder;
-    line-height: 1.2;
 }
 
-.shop-heading span {
-    background-color: #FFFFFF;
-    padding: 1rem;
+.shop-head {
+    display: flex;
+    width: 14rem;
+    padding: 0;
+}
+
+.shop-subheading {
+    margin-bottom: 1rem;
+}
+
+.shop-subheading, .terms-subheading {
+    font-weight: 500;
+}
+
+.date-subheading {
+    font-weight: 700;
+}
+
+.shop-img {
+    max-width: 100%;
+    height: 30rem;
+    border-radius: 10px;
+    position: absolute;
+    top: 28.5%;
+}
+
+.shop-btn {
+    margin-top: 1rem;
+}
+
+/* trending section */
+
+.trending-container {
+    max-height: 847;
+    max-width: 1720px;
+    display: flex;
+    flex-direction: column;
 }
