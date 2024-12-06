@@ -125,5 +125,24 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 1.5rem;
+    padding: 2rem 5rem;
+    margin: 2rem 0;
 }
+
+.partner-container img {
+    height: 3rem;
+    width: 6rem;
+}
+
+/* arrival section */
+/* .arrival-section {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.arrival-section .card {
+    height: 5rem;
+    width: 2.5rem;
+} */
