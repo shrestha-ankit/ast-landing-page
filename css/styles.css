@@ -375,3 +375,75 @@ html {
     left: 90%;
     bottom: 30%;
 }
+
+/* download section */
+.download-container {
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.download-container .card {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-details {
+    max-width: 507px;
+    max-height: 382px;
+}
+
+.phone {
+    max-width: 671px;
+    max-height: 710px;
+    height: min-content;
+}
+
+.download-details__text {
+    max-height: 246px;
+    max-width: 507px;
+    gap: 41px;
+    margin-bottom: 5rem;
+}
+
+.download-details h2 {
+    max-width: 507px;
+    max-height: 144px;
+    font-size: 48px;
+    line-height: 72px;
+    text-transform: uppercase;
+    letter-spacing: 6%;
+    margin-bottom: 2rem;
+}
+
+.download-details p {
+    max-width: 419px;
+    max-height: 61px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 35px;
+}
+
+.btn-group {
+    max-width: 427px;
+    max-height: 71px;
+}
+
+.apple-btn, .google-btn {
+    cursor: pointer;
+    background-color: #000000;
+    color:#FFFFFF;
+    max-width: 204px;
+    max-height: 71px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin-right: 3%;
+}
+
+.apple-btn span, .google-btn span {
+    display: block;
+}
