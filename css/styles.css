@@ -174,7 +174,7 @@ html {
     max-width: 1920px;
     max-height: 186px;
     background-color: #EBD96B;
-    padding: 2rem 5rem;
+    padding: 4rem;
     margin-top: 2rem;
 }
 
@@ -313,10 +313,65 @@ html {
 }
 
 /* trending section */
-
 .trending-container {
     max-height: 847;
     max-width: 1720px;
+    padding: 4rem;
+}
+
+.treanding-heading {
+    max-height: 50px;
+    max-width: 511px;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.trending-card-container {
+    max-height: 679px;
+    max-width: 1720px;
+    margin-top: 4rem;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+}
+
+.trending-card-container .card {
+    width: 50%;
+}
+
+.trending {
+    max-width: 835px;
+    max-height: 679px;
+}
+
+.trending-wrapper {
+    max-width: 835px;
+    max-height: 76px;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.trending img {
+    max-width: 834px;
+    max-height: 575px;
+    width: 37rem;
+} 
+
+.trending-wrapper p{
+    max-width: 345px;
+    max-height: 36px;
+}
+
+.trending-wrapper a {
+    max-width: 146px;
+    max-height: 33px;
+    margin-top: 0.5rem;
+}
+
+.trending-wrapper img {
+    max-width: 32px;
+    max-height: 32px;
+    position: absolute;
+    left: 90%;
+    bottom: 30%;
 }
