@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #FFFFFF;
     overflow-x: hidden;
 }
@@ -23,7 +23,7 @@ html {
 
 /* Navbar */
 .nav-bar {
-    padding: 2rem 3rem;
+    padding: 2rem 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,7 +42,7 @@ html {
 .nav-links ul li a {
     text-decoration: none;
     color: #333;
-    font-weight: bold;
+    font-weight: 500;
     text-transform: uppercase;
 }
 
@@ -195,5 +195,16 @@ html {
 
 .shop-img {
     height: 30rem;
-    width: 100%;
+    width: 100%;    
+}
+
+.shop-heading {
+    text-transform: uppercase;
+    font-weight: bolder;
+    line-height: 1.2;
+}
+
+.shop-heading span {
+    background-color: #FFFFFF;
+    padding: 1rem;
 }
