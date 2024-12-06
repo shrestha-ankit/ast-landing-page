@@ -138,7 +138,7 @@ html {
 .arrival-section {
     background-color: #FFFFFF;
     padding: 3rem;
-    margin: 2rem 0 13rem 0;
+    margin: 2rem 0 20rem 0;
 }
 
 .arrival-heading {
@@ -156,7 +156,7 @@ html {
 
 .arrival-cards .card {
     height: 20rem;
-    width: 20rem;
+    width: 25rem;
     position: relative;
 }
 
@@ -173,10 +173,27 @@ html {
 .arrow {
     position: absolute;
     left: 90%;
-    bottom: -60%;
+    bottom: -100%;
 }
 
 .card .arrival-subhheading {
     margin: 1rem 0;
     font-weight: bold;
+}
+
+/* shop now section */
+.shop-now-container {
+    background-color: #EBD96B;
+    padding: 3rem 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-now-container .card {
+    width: 50%;
+}
+
+.shop-img {
+    height: 30rem;
+    width: 100%;
 }
