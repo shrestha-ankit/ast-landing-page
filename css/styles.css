@@ -100,6 +100,7 @@ html {
 
 .home-heading span {
     display: block;
+    padding: 0.2rem 0.5rem;
 }
 
 .home-heading {
@@ -112,13 +113,11 @@ html {
 }
 
 .rotate_white {
-    background-color: #FFFFFF;
-    padding: 0.2rem 0.5rem;
+    background-color: #FFFFFF;   
 }
 
 .rotate_yellow {
     background-color: #EBD96B;
-    padding: 0.2rem 0.5rem;
 }
 
 .rotate_white, .rotate_yellow {
@@ -135,11 +134,13 @@ html {
     max-height: 58px;
     font-size: 1.25rem;
     margin: 1rem 0 2rem;
+    padding: 0.2rem 0.5rem;
 }
 
 .btn {
     max-height: 77px;
     max-width: 221px;
+    margin-left: 0.5rem;
 }
 
 .btn-primary {
@@ -285,31 +286,38 @@ html {
 .shop-head {
     display: flex;
     width: 14rem;
-    padding: 0;
+    padding: 0.2rem 0.5rem;
+}
+
+.shop-head-next {
+    padding: 0.2rem 0.5rem;
 }
 
 .shop-subheading {
     margin-bottom: 1rem;
+    padding: 0.2rem 0.5rem;
 }
 
 .shop-subheading, .terms-subheading {
     font-weight: 500;
+    padding: 0.2rem 0.5rem;
 }
 
 .date-subheading {
     font-weight: 700;
+    padding: 0.2rem 0.5rem;
 }
 
 .shop-img {
     max-width: 100%;
-    height: 30rem;
+    height: 32rem;
     border-radius: 10px;
     position: absolute;
     top: 28.5%;
 }
 
 .shop-btn {
-    margin-top: 1rem;
+    margin: 1rem 0 0rem 0.5rem;
 }
 
 /* trending section */
@@ -446,4 +454,73 @@ html {
 
 .apple-btn span, .google-btn span {
     display: block;
+}
+
+/* email section */
+
+.email-container {
+    background-color: #EBD96B;
+    max-width: 1920px;
+    max-height: 623px;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-container h2 {
+    color: #FFFFFF;
+    max-height: 124px;
+    max-width: 966px;
+    margin-bottom: 1.5rem;
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 70px;
+    letter-spacing: 3%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.email-container p {
+    max-width: 1010px;
+    max-height: 29px;
+    font-weight: 400;
+    font-size: 400;
+    line-height: 35px;
+    letter-spacing: 3%;
+    color: #FFFFFF;
+    margin-bottom: 1.5rem;
+}
+
+.email-input-btn {
+    max-width: 574px;
+    max-height: 87px;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+.email-input-btn input {
+    border: none;
+    padding: 1.5rem 2rem;
+}
+
+.email-input-btn input::placeholder {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: 3%;
+    color: #767676;
+}
+
+.email-input-btn button {
+    max-width: 161px;
+    max-height: 67px;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #000000;
+    color: #FFFFFF;
+    text-transform: uppercase;
 }
