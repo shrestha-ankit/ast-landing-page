@@ -170,90 +170,13 @@ html {
     bottom: 0;
 }
 
-
-
-@media (max-width: 1100px) {
-    .home-image {
-        max-width: 400px;
-        max-height: 500px;
-        height: 28rem;
-        border-radius: 10px;
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-    }
-
-}
-
-@media (max-width: 800px) {
-    .home-image {
-        max-width: 250px;
-        max-height: 500px;
-        height: 28rem;
-        border-radius: 10px;
-        position: absolute;
-        left: 60%;
-        bottom: 0;
-    }
-}
-
-@media (max-width: 426px) {
-    /* Navbar */
-    .nav-bar {
-        max-height: 96px;
-        max-width: 375px;
-        padding: 40px 16px 16px 16px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .nav-brand {
-        max-width: 117.05px;
-        max-height: 18.18px;
-    }
-
-    .header-container {
-        max-width: 343px;
-        max-height: 176px;
-        border-radius: 24px;
-    }
-
-    .home-heading {
-        max-width: 99px;
-        max-height: 96px;
-        font-weight: 900;
-        line-height: 24px;
-    }
-
-    .home-sub-heading {
-        display: none !important;
-    }
-
-    .btn-primary {
-        max-width: 80px;
-        max-height: 34px;
-        border-radius: 4px;
-        padding: 8px 12px;
-        gap: 8px;
-    }
-
-    .home-image {
-        max-width: 174px;
-        max-height: 156px;
-        position: absolute;
-        top: 21px;
-        left: 173px;
-    }
-
-}
-
 /* Partner Section */
 .partner-container {
     max-width: 1920px;
     max-height: 186px;
     background-color: #EBD96B;
-    padding: 4rem;
     margin-top: 2rem;
+    padding: 2rem
 }
 
 .partner-image {
@@ -261,7 +184,7 @@ html {
     max-height: 57px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .partner-container img {
@@ -603,34 +526,24 @@ html {
 }
 
 /* footer section */
-
 .footer-section {
-    max-width: 1920px;
     max-height: 545px;
-    background-color: #000000;
-    color: #FFFFFF;
-    padding: 5rem;
+    max-width: 1920px;
+    background: #000000;
+    padding: 3rem 1rem 4rem 2.5rem;
 }
 
 .footer-container {
-    max-height: 291px;
     max-width: 1783px;
+    max-height: 291px;
     display: flex;
     justify-content: space-between;
 }
 
-.footer-description {
-    max-width: 953px;
-    max-height: 285px;
-    padding-bottom: 10rem;
-    gap: 188px;
-}
-
 .footer-container .card {
-    max-height: 248.4px;
     max-width: 415px;
+    max-height: 248.4px;
     gap: 32px;
-    margin-right: 1rem;
 }
 
 .footer-container .card h1 {
@@ -639,39 +552,35 @@ html {
     font-weight: 900;
     font-size: 40px;
     line-height: 60px;
-    letter-spacing: 3%;
+    letter-spacing: 3% !important;
     margin-bottom: 1rem;
+    color: #FFFFFF;
 }
 
 .footer-container .card p {
+    font-family: 'Roboto', sans-serif;
+    color: #8E8E8E;
     max-width: 415px;
     max-height: 80px;
-    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 40px;
-    letter-spacing: 2%;
     margin-bottom: 1rem;
+    letter-spacing: 2% !important;
 }
 
 .footer-container .card ul {
-    max-height: 52px;
-    max-width: 250px;
-    gap: 14px;
     list-style-type: none;
+    max-width: 250px;
+    max-height: 52px;
+    gap: 14px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
-.footer-container .card ul li {
-    max-height: 52px;
-    max-width: 52px;
-    cursor: pointer;
-    background-color: #EBD96B;
-    color: #000000;
-    font-weight: bolder;
-    text-align: center;
-    padding: 1.5rem;
+.footer-container .card ul li img{
+    max-width: 25px;
+    max-height: 25px;
 }
 
 .footer-description {
@@ -679,21 +588,20 @@ html {
     max-width: 953px;
     gap: 188px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
-.footer-description .footer-column {
-    max-height: 285px;
+.footer-column {
     max-width: 137px;
+    max-height: 285px;
 }
 
-.footer-column h3{
+.footer-column h3 {
     max-width: 105px;
-    max-height: 28px;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 40px;
-    letter-spacing: 2%;
+}
+
+.footer-column ul li a, .footer-column1 ul li a, .footer-column2 ul li a{
+    text-decoration: none;
 }
 
 .footer-column ul, .footer-column1 ul, .footer-column2 ul {
@@ -701,47 +609,79 @@ html {
 }
 
 .footer-column ul li a {
-    text-decoration: none;
-    color: #7A7A7A;
-    max-width: 74px;
+    color: #8E8E8E;
+}
+
+.footer-column ul li a {
     max-height: 40px;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 2%;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 2% !important;
+}
+
+.footer-column ul li {
+    margin: 1rem 0;
+}
+
+.about {
+    max-width: 74px;
+}
+
+.contact {
+    max-width: 137px;
+}
+
+.support, .career {
+    max-width: 98px;
+}
+
+.footer-column h3, .footer-column1 h3, .footer-column2 h3 {
+    max-height: 28px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 2% !important;
+    color: #D9D9D9; 
 }
 
 .footer-column1 {
-    max-width: 199px;
     max-height: 283px;
-
+    max-width: 199px;
 }
 
-.footer-column1 h3, .footer-column h3, .footer-column2 h3 {
-    font-family: "Roboto", sans-serif;
-    color: #D9D9D9;
-    margin-bottom: 1rem;
-}
-
-.footer-column1 h3 {
+.footer-column1 h3{
     max-width: 115px;
-    max-height: 28px;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 40px;
-    letter-spacing: 2%;
-}
+} 
 
+.footer-column1 ul li {
+    margin: 1rem 0;
+}
 
 .footer-column1 ul li a {
-    text-decoration: none;
     color: #7A7A7A;
-    max-width: 184px;
     max-height: 40px;
     font-weight: 400;
     font-size: 24px;
     line-height: 40px;
-    letter-spacing: 2%;
+    letter-spacing: 2% !important;
+}
+
+.share{
+    max-width: 184px;
+}
+
+.order{
+    max-width: 197px;
+}
+
+.size {
+    max-width: 128px;
+}
+
+.faq{
+    max-width: 62px;
 }
 
 .footer-column2 {
@@ -751,20 +691,26 @@ html {
 
 .footer-column2 h3 {
     max-width: 60px;
-    max-height: 28px;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 40px;
-    letter-spacing: 2%;
+    color: #EAEAEA;
+}
+
+.footer-column2 ul li {
+    margin: 1rem 0;
 }
 
 .footer-column2 ul li a {
-    max-width: 239px;
+    color: #8E8E8E;
     max-height: 40px;
     font-weight: 400;
     font-size: 24px;
     line-height: 40px;
-    letter-spacing: 2%;
-    color: #8E8E8E;
-    text-decoration: none;
+    letter-spacing: 2% !important;
+}
+
+.terms {
+    max-width: 239px;
+}
+
+.privacy {
+    max-width: 169px;
 }
