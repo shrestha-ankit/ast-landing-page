@@ -170,6 +170,69 @@ html {
     bottom: 0;
 }
 
+@media (max-width: 1000px) {
+    .home-image {
+        max-width: 871px;
+        max-height: 784px;
+        height: 30rem;
+        border-radius: 10px;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+    }
+
+}
+
+@media (max-width: 426px) {
+    /* Navbar */
+    .nav-bar {
+        max-height: 96px;
+        max-width: 375px;
+        padding: 40px 16px 16px 16px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-brand {
+        max-width: 117.05px;
+        max-height: 18.18px;
+    }
+
+    .header-container {
+        max-width: 343px;
+        max-height: 176px;
+        border-radius: 24px;
+    }
+
+    .home-heading {
+        max-width: 99px;
+        max-height: 96px;
+        font-weight: 900;
+        line-height: 24px;
+    }
+
+    .home-sub-heading {
+        display: none !important;
+    }
+
+    .btn-primary {
+        max-width: 80px;
+        max-height: 34px;
+        border-radius: 4px;
+        padding: 8px 12px;
+        gap: 8px;
+    }
+
+    .home-image {
+        max-width: 174px;
+        max-height: 156px;
+        position: absolute;
+        top: 21px;
+        left: 173px;
+    }
+
+}
+
 /* Partner Section */
 .partner-container {
     max-width: 1920px;

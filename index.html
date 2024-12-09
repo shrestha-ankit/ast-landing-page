@@ -34,8 +34,23 @@
                     </div>
                     <li><a class="btn" href="#">Sign Up</a></li>
                 </ul>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
         </nav>
+
+        <script>
+            /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+            function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+            }
+        </script>
     
         <div class="header-container">
             <div class="text-container">
@@ -53,8 +68,7 @@
             </div>
         </div>
     </header>
-    
-    
+
     
     <!-- partner section -->
      <section class="partner-container">
