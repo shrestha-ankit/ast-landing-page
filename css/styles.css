@@ -915,7 +915,6 @@ html {
 .footer-container .card p {
     font-family: 'Roboto', sans-serif;
     color: #8E8E8E;
-    max-width: 415px;
     max-height: 80px;
     font-weight: 400;
     font-size: 24px;
@@ -940,7 +939,6 @@ html {
 
 .footer-description {
     max-height: 285px;
-    max-width: 953px;
     gap: 188px;
     display: flex;
     justify-content: flex-end;
@@ -979,18 +977,6 @@ html {
     margin: 1rem 0;
 }
 
-.about {
-    max-width: 74px;
-}
-
-.contact {
-    max-width: 137px;
-}
-
-.support, .career {
-    max-width: 98px;
-}
-
 .footer-column h3, .footer-column1 h3, .footer-column2 h3 {
     max-height: 28px;
     font-family: 'Roboto', sans-serif;
@@ -1023,21 +1009,6 @@ html {
     letter-spacing: 2% !important;
 }
 
-.share{
-    max-width: 184px;
-}
-
-.order{
-    max-width: 197px;
-}
-
-.size {
-    max-width: 128px;
-}
-
-.faq{
-    max-width: 62px;
-}
 
 .footer-column2 {
     max-width: 241px;
@@ -1062,10 +1033,99 @@ html {
     letter-spacing: 2% !important;
 }
 
-.terms {
-    max-width: 239px;
-}
+@media (max-width: 425px)  {
+    .footer-section {
+        max-height: 726px;
+        padding: 32px 16px;
+        gap: 8px !important;
+    }
 
-.privacy {
-    max-width: 169px;
+    .footer-container {
+        max-height: 662px;
+        gap: 56px;
+        display: block;
+    }
+
+    .footer-container .card {
+        max-height: 128px;
+        max-width: 343px;
+        margin-bottom: 56px;
+    }
+
+    .footer-container .card h1 {
+        max-width: 116px;
+        max-height: 36px;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 3% !important;
+        margin-bottom: 8px;
+    }
+
+    .footer-container .card p {
+        max-width: 335px;
+        max-height: 16px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16.41px;
+        letter-spacing: 2% !important;
+        margin-bottom: 16px;
+    }
+
+    .footer-container .card ul {
+        max-width: 250px;
+        max-height: 52px;
+        gap: 14px;
+    }
+
+    .footer-container .card ul img {
+        max-width: 52px;
+        max-height: 52px;
+    }
+
+    .footer-description {
+        max-height: 478px;
+        display: block;
+    }
+
+    .footer-description .footer-column {
+        max-height: 160px;
+        max-width: 343px;
+        gap: 16px;
+    }
+
+    .footer-description .footer-column, .footer-description .footer-column1 {
+        margin-bottom: 32px;
+    }
+
+    .footer-description .footer-column h3, .footer-description  .footer-column1 h3,
+    .footer-description  .footer-column2 h3{
+        max-height: 24px;
+        max-width: 82px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 2% !important;
+    }
+
+    .footer-description .footer-column li,  .footer-description .footer-column1 li {
+        margin-bottom: 12px;
+    }
+
+    .footer-description .footer-column li,  .footer-description .footer-column1 li, 
+    .footer-description .footer-column2 li {
+        margin: 0;
+    }
+
+    .footer-description .footer-column li a, .footer-description .footer-column1 li a, 
+    .footer-description .footer-column2 li a {
+        max-width: 343px;
+        max-height: 21px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 2% !important;
+    }
+
 }
