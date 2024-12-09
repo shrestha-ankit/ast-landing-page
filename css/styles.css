@@ -821,6 +821,65 @@ html {
     text-transform: uppercase;
 }
 
+@media (max-width: 425px)  {
+    .email-container {
+        max-height: 254px;
+        padding: 40px 33px;
+    }
+
+    .email-container h2 {
+        max-height: 60px;
+        max-width: 309px;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 3% !important;
+        text-align: center;
+        margin: 0;
+    }
+
+    .email-container p {
+        max-width: 205px;
+        max-height: 36px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 3% !important;
+        text-align: center;
+        margin-bottom: 28px;
+    }
+
+    .email-input-btn {
+        max-width: 337px;
+        max-height: 50px;
+        border: 8px;
+        padding: 8px 10px;
+        display: flex;
+    }
+
+    .email-input-btn input {
+        padding: 0;
+    }
+
+    .email-input-btn input::placeholder {
+        max-width: 150px;
+        max-height: 21px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 3%;
+    }
+
+    .email-input-btn button {
+        max-width: 61px;
+        max-height: 34px;
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: -5% !important;
+        padding: 8px 16px;
+    }
+}
+
 /* footer section */
 .footer-section {
     max-height: 545px;
