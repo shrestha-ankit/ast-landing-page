@@ -453,6 +453,70 @@ html {
     margin: 1rem 0 0rem 0.5rem;
 }
 
+
+@media (max-width: 425px) {
+    .shop-now-container {
+        padding: 2rem;
+        margin: 0;
+    }
+
+    .shop-now-container .card {
+        position: relative;
+        padding: 0;
+    }
+
+    .shop-img {
+        height: 205px;
+        position: absolute;
+        top: 90%;
+    }
+
+    .container-card {
+        max-height: 116px;
+        gap: 4px;
+        margin-bottom: 0.5rem;
+    }
+
+    .container-card .shop-heading {
+        max-height: 60px;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .shop-subheading {
+        max-height: 24px;
+        font-weight: 500;
+        font-size: 8px;
+        line-height: 12px;
+        letter-spacing: -2% !important;
+    }
+
+    .date-subheading {
+        max-height: 12px;
+        font-weight: 700;
+        font-size: 8px;
+        line-height: 12px;
+        letter-spacing: 2% !important;
+    }
+
+    .terms-subheading {
+        max-height: 12px;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 12px;
+        letter-spacing: -2% !important;
+    }
+
+    .shop-btn {
+        max-height: 34px;
+        border-radius: 8px;
+        padding: 8px 12px;
+        font-size: x-small;
+    }
+ 
+}
+
 /* trending section */
 .trending-container {
     max-height: 847;
