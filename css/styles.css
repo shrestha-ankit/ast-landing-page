@@ -637,7 +637,6 @@ html {
 
 /* download section */
 .download-container {
-    padding: 4rem;
     display: flex;
     justify-content: space-between;
 }
@@ -690,21 +689,67 @@ html {
     max-height: 71px;
 }
 
-.apple-btn, .google-btn {
-    cursor: pointer;
-    background-color: #000000;
-    color:#FFFFFF;
+.download-btn {
     max-width: 204px;
     max-height: 71px;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 5px;
-    padding: 0.5rem;
-    margin-right: 3%;
 }
 
-.apple-btn span, .google-btn span {
-    display: block;
+@media (max-width: 425px)  {
+
+    .download-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 56px 0;
+    }
+
+    .download-container .remove  {
+        display: none;
+    }
+
+    .download-details {
+        max-height: 175px;
+        max-width: 260px;
+        margin: 0;
+    }
+
+    .download-details__text {
+        max-height: 108px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .download-details__text h2{
+        max-height: 60px;
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 30px;
+        letter-spacing: 6% !important;
+        margin-bottom: 12px;
+    }
+
+    .download-details__text p {
+        max-height: 36px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 24px;
+        letter-spacing: -4% !important;
+    }
+
+    .btn-group {
+        max-width: 260px;
+        max-height: 43px;
+        gap: 16px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .download-btn {
+        max-width: 122px;
+        max-height: 43px;
+        border-radius: 10px;
+    }
 }
 
 /* email section */
