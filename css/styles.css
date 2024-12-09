@@ -581,6 +581,65 @@ html {
     bottom: 30%;
 }
 
+@media (max-width: 425px) {
+    .trending-container {
+        max-height: 404px;
+        padding: 16px 24px;
+    }
+
+    .trending-container .treanding-heading {
+        max-height: 41px;
+        max-width: 404px;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 50px;
+        letter-spacing: 6% !important;
+        margin-bottom: 24px;
+    }
+
+    .trending-card-container {
+        max-height: 291px;
+        max-width: 588px;
+        gap: 24px;
+        margin: 0;
+        overflow-x: scroll;
+    }
+
+    .trending-card-container .card {
+        max-height: 291px;
+        max-width: 310px;
+        gap: 24px
+    }
+
+    .trending img {
+        max-height: 215px;
+        max-width: 190px;
+    }
+
+    .trending-wrapper {
+        max-width: 310px;
+        max-height: 52px;
+        position: relative;
+    }
+
+    .trending-wrapper img {
+        max-width: 24px;
+        max-height: 24px;
+        position: absolute;
+        top: 50%;
+    }
+
+    .trending-wrapper p {
+        max-width: 321px;
+        max-height: 24px;
+    }
+
+    .trending-wrapper a{
+        max-width: 151px;
+        max-height: 21px;
+    }
+}
+
 /* download section */
 .download-container {
     padding: 4rem;
