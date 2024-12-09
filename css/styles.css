@@ -90,7 +90,6 @@ html {
 /* responsive design for navigation bar */ 
 @media (max-width: 425px) {
     .nav-bar {
-        max-width: 375px;
         max-height: 96px;
         padding: 2.5rem 1rem 1rem 1rem;
         position: relative;
@@ -103,9 +102,17 @@ html {
     }
 
     .nav-links ul {
-        max-width: 375px;
-        max-height: 812px;
         display: none;
+        flex-direction: column;
+        padding: 1rem;
+        background-color: #ffffff;
+        position: absolute;
+        right: 1rem;
+        top: 100%;
+        width: 100%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        gap: 1rem;
+        z-index: 1000;
     }
     .box {
         max-width: 24px;
@@ -270,20 +277,25 @@ html {
 
 @media (max-width: 425px) {
     .partner-container {
-        max-width: 565.37px;
         max-height: 61.04px;
-        padding: 1rem;
-        margin-top: 0;
-        gap: 1rem;
+        padding: 16px;
+        margin-top: 0; 
+        overflow-x: scroll;  
+        overflow-y: hidden;
     }
 
     .partner-image {
-        overflow-x: scroll;
+        max-height: 61.04px;
+        max-width: 565.37px;
+        white-space: nowrap;
+        display: inline-flex;
+        gap: 50px;
     }
 
     .partner-image img {
         max-height: 29px;
         max-width: 43.99px;
+        flex-shrink: 0;
     }
 }
 
@@ -819,6 +831,12 @@ html {
     background-color: #000000;
     color: #FFFFFF;
     text-transform: uppercase;
+}
+
+@media (max-width: 360px) {
+    .email-container h2 {
+        font-size: 80% !important;
+    }
 }
 
 @media (max-width: 425px)  {
