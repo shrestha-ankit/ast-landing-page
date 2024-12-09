@@ -170,17 +170,31 @@ html {
     bottom: 0;
 }
 
-@media (max-width: 1000px) {
+
+
+@media (max-width: 1100px) {
     .home-image {
-        max-width: 871px;
-        max-height: 784px;
-        height: 30rem;
+        max-width: 400px;
+        max-height: 500px;
+        height: 28rem;
         border-radius: 10px;
         position: absolute;
         left: 50%;
         bottom: 0;
     }
 
+}
+
+@media (max-width: 800px) {
+    .home-image {
+        max-width: 250px;
+        max-height: 500px;
+        height: 28rem;
+        border-radius: 10px;
+        position: absolute;
+        left: 60%;
+        bottom: 0;
+    }
 }
 
 @media (max-width: 426px) {
