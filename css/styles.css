@@ -260,13 +260,31 @@ html {
     max-width: 1570.85px;
     max-height: 57px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
 .partner-container img {
     max-width: 86.47px;
     max-height: 57px;
+}
+
+@media (max-width: 425px) {
+    .partner-container {
+        max-width: 565.37px;
+        max-height: 61.04px;
+        padding: 1rem;
+        margin-top: 0;
+        gap: 1rem;
+    }
+
+    .partner-image {
+        overflow-x: scroll;
+    }
+
+    .partner-image img {
+        max-height: 29px;
+        max-width: 43.99px;
+    }
 }
 
 /* arrival section */
@@ -312,12 +330,12 @@ html {
     max-height: 76px;
     max-width: 484px;
     margin-top: 1rem;
+    position: relative;
 }
 
 .card a {
     text-decoration: none;
     color: #7F7F7F;
-;
 }
 
 .arrow {
@@ -325,7 +343,7 @@ html {
     max-height: 32px;
     position: absolute;
     left: 90%;
-    bottom: 3%;
+    bottom: 10%;
 }
 
 
@@ -334,6 +352,44 @@ html {
     max-height: 36px;
     margin: 1rem 0 0.5 0;
     font-weight: bold;
+}
+
+@media (max-width: 425px)  {
+    .arrival-section {
+        margin: 0;
+        padding: 24px 16px;
+        max-height: 559px;
+        max-width: 842px;
+        gap: 24px;
+    }
+
+    .arrival-section .arrival-heading {
+        max-width: 404px;
+        max-height: 41px;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 50px;
+        letter-spacing: 6% !important;
+    }
+
+    .arrival-section .arrival-cards {
+        margin-top: 24px;
+        max-height: 446px;
+        max-width: 810px;
+        gap: 24px;
+        overflow-x: scroll;
+    }
+
+    .arrival-cards .card {
+        max-height: 446px;
+        width: 254px;
+    }
+
+    .arrival-img {
+        max-width: 254px;
+        max-height: 370px;
+        border-radius: 20px;
+    }
 }
 
 /* shop now section */
