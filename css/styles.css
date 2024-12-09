@@ -33,6 +33,10 @@ html {
     align-items: center;
 }
 
+.box {
+    display: none;
+}
+
 .nav-brand {
     max-width: 236.26px;
     max-height: 60px;
@@ -49,7 +53,6 @@ html {
 
 .nav-links ul {
     list-style: none;
-    display: flex;
     gap: 1.5rem;
 }
 
@@ -63,6 +66,7 @@ html {
 .nav-links ul li {
     max-width: 135px;
     max-height: 36px;
+    display: inline-block;
 }
 
 .nav-links ul li a {
@@ -81,6 +85,34 @@ html {
     color: #FFFFFF;
     padding: 0.8rem 1.5rem;
     border-radius: 5px;
+}
+
+/* responsive design for navigation bar */ 
+@media (max-width: 425px) {
+    .nav-bar {
+        max-width: 375px;
+        max-height: 96px;
+        padding: 2.5rem 1rem 1rem 1rem;
+        position: relative;
+        margin-bottom: 1rem;
+    }
+
+    .nav-brand {
+        max-width: 147.62px;
+        max-height: 40px;
+    }
+
+    .nav-links ul {
+        max-width: 375px;
+        max-height: 812px;
+        display: none;
+    }
+    .box {
+        max-width: 24px;
+        max-height: 24px;
+        display: block;
+    }
+
 }
 
 /* Header Section */
@@ -168,6 +200,51 @@ html {
     position: absolute;
     left: 50%;
     bottom: 0;
+}
+
+@media (max-width: 425px)  {
+    .header-container {
+        max-width: 343px;
+        max-height: 176px;
+        border: 24px;
+        background: #F4F6F5;
+        padding: 5rem 1rem;
+        margin: 0 1rem 1rem 1rem;
+    }
+
+    .header-container .text-container .home-heading, .rotate_white, .rotate_yellow{
+        max-width: 99px;
+        max-height: 96px;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .header-container .text-container .home-heading {
+        margin-bottom: 30px;
+    }
+
+    .text-container p {
+        display: none;
+    }
+
+    .btn-primary {
+        max-width: 80px;
+        max-height: 34px;
+        border-radius: 4px;
+        gap: 8px;
+        padding: 8px 12px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+
+    .home-image {
+        max-width: 186px;
+        max-height: 156px;
+    }
+
 }
 
 /* Partner Section */
