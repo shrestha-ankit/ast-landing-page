@@ -540,10 +540,6 @@ html {
     justify-content: space-between;
 }
 
-.trending-card-container .card {
-    width: 50%;
-}
-
 .trending {
     max-width: 835px;
     max-height: 679px;
@@ -607,13 +603,12 @@ html {
 
     .trending-card-container .card {
         max-height: 291px;
-        max-width: 310px;
-        gap: 24px
+        gap: 25px
     }
 
     .trending img {
         max-height: 215px;
-        max-width: 190px;
+        max-width: 310px;
     }
 
     .trending-wrapper {
